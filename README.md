@@ -1,16 +1,31 @@
-# Enunciado
+# 📦 Carrito de Compras
 
-1. Ecommerce
+🛒 Carrito de Compras
+Este es un proyecto de Carrito de Compras en React, donde puedes agregar productos, ajustar cantidades y ver el total actualizado. Además, está optimizado con useContext y useReducer para gestionar el estado global de manera eficiente.
 
-✔️ Muestra una lista de productos que vienen de un JSON
-✔️ Añade un filtro por categoría
-✔️ Añade un filtro por precio
+🚀 Tecnologías utilizadas
+React – Para la construcción de la interfaz de usuario.
 
-✔️ Haz uso de useContext para evitar pasar props innecesarias
+React Context + useReducer – Para manejar el estado del carrito.
 
-2. Shopping Cart
+CSS3 – Para los estilos y diseño responsivo.
 
-- Haz que se puedan añadir y quitar productos del carrito.
-- Haz que se puedan modificar la cantidad de productos en el carrito.
-- Sincroniza los cambios del carrito con la lista de productos.
-- Guarda en un localStorage el carrito para que se recupere al recargar la página.
+Fake Store API – Para obtener productos de prueba.
+
+🎯 Características principales
+✅ Agregar productos al carrito ✅ Modificar cantidades en tiempo real ✅ Mostrar el total actualizado ✅ Eliminar productos del carrito ✅ Resetear el carrito por completo ✅ Diseño responsivo
+
+📦 Instalación y uso
+Si quieres probar este proyecto en tu máquina, sigue estos pasos:
+
+1️⃣ Clona el repositorio
+
+git clone https://github.com/CristhianZ2022/Carrito-de-Compras.git
+
+  2️⃣ Instala las dependencias
+
+npm install
+
+  3️⃣ Ejecuta el proyecto
+
+npm run dev

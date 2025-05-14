@@ -1,0 +1,147 @@
+/* Opciones del carrito */
+
+.cart {
+  position: fixed;
+  visibility: hidden;
+  top: 25px;
+  right: 10px;
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  overflow-y: auto;
+}
+
+.cart-button {
+  position: fixed;
+  top: 15px;
+  right: 5px;
+  background: #ff6f61;
+  padding: 8px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  z-index: 999;
+}
+
+.counter {
+  position: fixed;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  top: 0;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  background: #d6453d;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.cart-button:hover {
+  background: #ff483d;
+  scale: 1.1;
+}
+
+.cart-button ~ input:checked ~ .cart {
+  visibility: visible;
+  height: 93%;
+  z-index: 998;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Lista de productos del carrito */
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart li {
+  position: relative; /* Para posicionar los elementos dentro */
+  width: 90%; /* No debe pasar de 200px */
+  min-height: 130px; /* Mínimo de altura */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Evita que los elementos se salgan */
+}
+
+.cart li img {
+  max-width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.cart li footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.cart li footer strong {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  word-wrap: break-word; /* Evita que el texto desborde */
+  max-width: 180px; /* Limita el ancho del título */
+}
+
+.cart li footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cart li footer select {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.cart li button {
+  background: #ff6f61;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.cart li button:hover {
+  background: #ff483d;
+}
+
+.cart li .delete-item {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

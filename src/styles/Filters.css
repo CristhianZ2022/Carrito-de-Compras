@@ -1,0 +1,60 @@
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 75px;
+  max-width: 100%;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filters h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.filters select, .filters input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filters select {
+  background-color: #f8f9fa;
+}
+
+.filters input[type="range"] {
+  appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  height: 8px;
+}
+
+.filters input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background: #3498db;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filters output {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #3498db;
+}
